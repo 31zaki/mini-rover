@@ -43,7 +43,7 @@ Ensure you have the following installed on your Raspberry Pi:
 1. Clone this repository to your Raspberry Pi:
 
     ```bash
-    git clone https://github.com/yourusername/minirover.git
+    git clone https://github.com/31zaki/minirover.git
     cd minirover
     ```
 
