@@ -5,7 +5,7 @@ from mpl_toolkits.mplot3d import Axes3D
 import importlib.util
 
 # Import bno055_IMU.py
-spec = importlib.util.spec_from_file_location("bno055_IMU", "/mnt/data/bno055_IMU.py")
+spec = importlib.util.spec_from_file_location("bno055_IMU", "bno055_IMU.py")
 bno055_IMU = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(bno055_IMU)
 
