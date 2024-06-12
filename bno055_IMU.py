@@ -3,13 +3,13 @@ import board
 import busio
 import adafruit_bno055
 
-# Create I2C bus interface
+# create I2C bus interface
 i2c = busio.I2C(board.SCL, board.SDA)
 
-# Create the BNO055 object
+# create the BNO055 object
 sensor = adafruit_bno055.BNO055_I2C(i2c)
 
-# Function to print sensor data
+# function to print sensor data
 def print_sensor_data():
     print("Temperature: {} degrees C".format(sensor.temperature))
     print("Accelerometer (m/s^2): {}".format(sensor.acceleration))
