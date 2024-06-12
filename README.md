@@ -43,8 +43,8 @@ Ensure you have the following installed on your Raspberry Pi:
 1. Clone this repository to your Raspberry Pi:
 
     ```bash
-    git clone https://github.com/31zaki/minirover.git
-    cd minirover
+    git clone https://github.com/31zaki/mini-rover.git
+    cd mini-rover
     ```
 
 2. Install the necessary Python packages:
