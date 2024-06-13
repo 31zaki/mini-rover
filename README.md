@@ -4,7 +4,7 @@ This project is a personal initiative aimed at practicing programming and electr
 
 ## Project Overview
 
-The Mini Rover is built using the chassis of the PiCar-X. For detailed information about the PiCar-X chassis, you can refer to the [official documentation](https://docs.sunfounder.com/projects/picar-x-v20/en/latest/index.html). Please note that in this project, only the chassis of the PiCar-X is used, and the Robot-HAT expansion board is not utilized.
+The Mini Rover is built using only the chassis of the PiCar-X. For detailed information about the PiCar-X chassis, you can refer to the [official documentation](https://docs.sunfounder.com/projects/picar-x-v20/en/latest/index.html). Note that in this project, the included Robot-HAT is not used. Instead, a custom PCB has been designed for the necessary components and connections. Additionally, custom parts for mounting the PCB were designed using Fusion360.
 
 ## Components
 
@@ -14,6 +14,21 @@ The Mini Rover is built using the chassis of the PiCar-X. For detailed informati
 4. **Battery:** [Battery for Raspberry Pi](https://www.amazon.co.jp/gp/product/B0C1GFX5LW/ref=ppx_yo_dt_b_asin_title_o00_s02?ie=UTF8&psc=1).
 5. **GPIO Expansion:** [GPIO Expansion Board](https://www.amazon.co.jp/gp/product/B072XBX3XX/ref=ppx_yo_dt_b_asin_title_o00_s01?ie=UTF8&th=1).
 6. **Breadboard** for initial wiring, with plans to design a custom PCB later.
+
+## PCB Design
+
+To streamline the wiring and improve reliability, a custom PCB has been designed using EAGLE. The PCB integrates all necessary components and connections for the Mini Rover.
+
+### EAGLE Design Files
+
+The PCB design files can be found in the `EAGLE/project` directory of this repository. This includes:
+
+- Schematic file
+- Board file
+
+### EAGLE Libraries
+
+Custom EAGLE libraries have been created for the components used in this project. These libraries are included in the `EAGLE/libraries` directory of this repository.
 
 ## Development Environment
 
@@ -49,6 +64,10 @@ Ensure you have the following installed on your Raspberry Pi:
 
 2. Install the necessary Python packages:
 
+    ```bash
+    pip install -r requirements.txt
+    ```
+
 3. Connect to your Raspberry Pi from VSCode via SSH to start development.
 
 ## Usage
@@ -69,4 +88,3 @@ This project is licensed under the MIT License. See the LICENSE file for details
 - GeeekPi for the cooling solution
 - [Battery Supplier](https://www.amazon.co.jp/gp/product/B0C1GFX5LW/ref=ppx_yo_dt_b_asin_title_o00_s02?ie=UTF8&psc=1) for the battery
 - [GPIO Expansion Board Supplier](https://www.amazon.co.jp/gp/product/B072XBX3XX/ref=ppx_yo_dt_b_asin_title_o00_s01?ie=UTF8&th=1) for the GPIO expansion
-
