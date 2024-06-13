@@ -64,9 +64,6 @@ Ensure you have the following installed on your Raspberry Pi:
 
 2. Install the necessary Python packages:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
 
 3. Connect to your Raspberry Pi from VSCode via SSH to start development.
 
