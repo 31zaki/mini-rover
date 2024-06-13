@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -72,29 +72,23 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6bXlkYzU5OA" projecturn="a.YnVzaW5lc3M6bXlkYzU5OCMyMDIyMDkyODU2MTQxMzE4MQ" f3durn="urn:adsk.wipprod:dm.lineage:6tOVedujSh6wqqyckvRe6g" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="3d9b27a0-d4b0-462d-9cb9-812f24e529d6" lastsyncedrevisionid="3d9b27a0-d4b0-462d-9cb9-812f24e529d6" lastboardhashguid="26d5aa96-aae8-539d-cd5e-ae76eb149785" lastpushedtime="2024-06-13T20:06:33Z" linktopcb3d="true"/>
+<fusionsync huburn="a.YnVzaW5lc3M6bXlkYzU5OA" projecturn="a.YnVzaW5lc3M6bXlkYzU5OCMyMDIyMDkyODU2MTQxMzE4MQ" f3durn="urn:adsk.wipprod:dm.lineage:6tOVedujSh6wqqyckvRe6g" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="c3c48b4b-2fa2-471f-8c37-e14ed348137c" lastsyncedrevisionid="c3c48b4b-2fa2-471f-8c37-e14ed348137c" lastboardhashguid="a3263018-2558-29f4-08fd-4cf72464b69c" lastpushedtime="2024-06-13T17:35:53Z" linktopcb3d="true"/>
 <plain>
-<wire x1="0" y1="0" x2="55" y2="0" width="0" layer="20"/>
-<wire x1="55" y1="0" x2="55" y2="98" width="0" layer="20"/>
-<wire x1="55" y1="98" x2="0" y2="98" width="0" layer="20"/>
-<wire x1="0" y1="98" x2="0" y2="0" width="0" layer="20"/>
-<text x="40.058" y="21.103" size="1.778" layer="1" rot="R180">+</text>
-<text x="54.088" y="19.082" size="1.778" layer="1" rot="R90">+</text>
-<text x="53.374" y="24.321" size="1.778" layer="1" rot="R90">+</text>
-<text x="31.872" y="36.013" size="1.778" layer="1">+</text>
-<text x="30.847" y="21.368" size="1.778" layer="1" rot="R180">-</text>
-<text x="44.357" y="20.939" size="1.778" layer="1" rot="R180">-</text>
-<text x="53.247" y="27.877" size="1.778" layer="1" rot="R90">-</text>
-<text x="35.219" y="36.019" size="1.778" layer="1">-</text>
-<text x="53.374" y="31.036" size="1.778" layer="1" rot="R90">PWM</text>
-<text x="37.873" y="35.746" size="1.778" layer="1">T</text>
-<text x="41" y="35.746" size="1.778" layer="1">E</text>
-<hole x="19.051" y="89.122" drill="3"/>
-<hole x="19.05" y="51.149" drill="3"/>
-<hole x="2.5" y="95.5" drill="3"/>
-<hole x="52.5" y="95.5" drill="3"/>
-<hole x="52.5" y="2.5" drill="3"/>
-<hole x="2.5" y="2.5" drill="3"/>
+<wire x1="0" y1="0" x2="78" y2="0" width="0" layer="20"/>
+<wire x1="78" y1="0" x2="78" y2="107" width="0" layer="20"/>
+<wire x1="78" y1="107" x2="0" y2="107" width="0" layer="20"/>
+<wire x1="0" y1="107" x2="0" y2="0" width="0" layer="20"/>
+<text x="61.058" y="26.103" size="1.778" layer="1" rot="R180">+</text>
+<text x="76.088" y="24.082" size="1.778" layer="1" rot="R90">+</text>
+<text x="76.374" y="35.321" size="1.778" layer="1" rot="R90">+</text>
+<text x="47.625" y="27.178" size="1.778" layer="1" rot="R90">+</text>
+<text x="51.847" y="26.368" size="1.778" layer="1" rot="R180">-</text>
+<text x="66.357" y="25.939" size="1.778" layer="1" rot="R180">-</text>
+<text x="76.247" y="38.877" size="1.778" layer="1" rot="R90">-</text>
+<text x="47.498" y="30.861" size="1.778" layer="1" rot="R90">-</text>
+<text x="76.374" y="42.036" size="1.778" layer="1" rot="R90">PWM</text>
+<text x="47.752" y="33.02" size="1.778" layer="1" rot="R90">TRIG</text>
+<text x="47.625" y="40.005" size="1.778" layer="1" rot="R90">ECHO</text>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">
@@ -405,8 +399,38 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <library name="RASPBERRY_PI_4B_4GB">
 <packages>
 <package name="MODULE_RASPBERRY_PI_4B_4GB">
+<wire x1="-42.5" y1="25" x2="-42.5" y2="-25" width="0.127" layer="21"/>
+<wire x1="-42.5" y1="-25" x2="-39.5" y2="-28" width="0.127" layer="21" curve="90"/>
+<wire x1="-39.5" y1="-28" x2="39.5" y2="-28" width="0.127" layer="21"/>
+<wire x1="39.5" y1="-28" x2="42.5" y2="-25" width="0.127" layer="21" curve="90"/>
+<wire x1="42.5" y1="-25" x2="42.5" y2="25" width="0.127" layer="21"/>
+<wire x1="42.5" y1="25" x2="39.5" y2="28" width="0.127" layer="21" curve="90"/>
+<wire x1="39.5" y1="28" x2="-39.5" y2="28" width="0.127" layer="21"/>
+<wire x1="-39.5" y1="28" x2="-42.5" y2="25" width="0.127" layer="21" curve="90"/>
 <text x="-42.75" y="-31.77" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="23.5" y1="-25.5" x2="45" y2="-25.5" width="0.127" layer="51" style="shortdash"/>
+<wire x1="45" y1="-25.5" x2="45" y2="25.5" width="0.127" layer="51" style="shortdash"/>
+<wire x1="45" y1="25.5" x2="23.5" y2="25.5" width="0.127" layer="51" style="shortdash"/>
+<wire x1="23.5" y1="25.5" x2="23.5" y2="-25.5" width="0.127" layer="51" style="shortdash"/>
 <text x="-42.75" y="29" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<wire x1="-42.75" y1="-30.255" x2="-42.75" y2="28.25" width="0.05" layer="39"/>
+<wire x1="-42.75" y1="28.25" x2="45.25" y2="28.25" width="0.05" layer="39"/>
+<wire x1="45.25" y1="28.25" x2="45.25" y2="-30.255" width="0.05" layer="39"/>
+<wire x1="45.25" y1="-30.255" x2="-42.75" y2="-30.255" width="0.05" layer="39"/>
+<circle x="-43.4" y="23" radius="0.2" width="0.4" layer="21"/>
+<circle x="-43.4" y="23" radius="0.2" width="0.4" layer="51"/>
+<wire x1="-42.5" y1="25" x2="-42.5" y2="-25" width="0.127" layer="51"/>
+<wire x1="-42.5" y1="-25" x2="-39.5" y2="-28" width="0.127" layer="51" curve="90"/>
+<wire x1="-39.5" y1="-28" x2="39.5" y2="-28" width="0.127" layer="51"/>
+<wire x1="39.5" y1="-28" x2="42.5" y2="-25" width="0.127" layer="51" curve="90"/>
+<wire x1="42.5" y1="-25" x2="42.5" y2="25" width="0.127" layer="51"/>
+<wire x1="42.5" y1="25" x2="39.5" y2="28" width="0.127" layer="51" curve="90"/>
+<wire x1="39.5" y1="28" x2="-39.5" y2="28" width="0.127" layer="51"/>
+<wire x1="-39.5" y1="28" x2="-42.5" y2="25" width="0.127" layer="51" curve="90"/>
+<pad name="S4" x="-39" y="-24.5" drill="2.75" diameter="6.2"/>
+<pad name="S3" x="19" y="-24.5" drill="2.75" diameter="6.2"/>
+<pad name="S2" x="19" y="24.5" drill="2.75" diameter="6.2"/>
+<pad name="S1" x="-39" y="24.5" drill="2.75" diameter="6.2"/>
 <pad name="1" x="-34.13" y="23.23" drill="1.016" shape="square"/>
 <pad name="3" x="-31.59" y="23.23" drill="1.016"/>
 <pad name="5" x="-29.05" y="23.23" drill="1.016"/>
@@ -447,12 +471,10 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <pad name="36" x="9.05" y="25.77" drill="1.016"/>
 <pad name="38" x="11.59" y="25.77" drill="1.016"/>
 <pad name="40" x="14.13" y="25.77" drill="1.016"/>
-<wire x1="-36.83" y1="26.67" x2="-36.83" y2="25.4" width="0.1524" layer="21"/>
-<wire x1="-36.83" y1="25.4" x2="-36.83" y2="20.32" width="0.1524" layer="21"/>
-<wire x1="-36.83" y1="20.32" x2="17.78" y2="20.32" width="0.1524" layer="21"/>
-<wire x1="17.78" y1="20.32" x2="17.78" y2="29.21" width="0.1524" layer="21"/>
-<wire x1="17.78" y1="29.21" x2="-36.83" y2="29.21" width="0.1524" layer="21"/>
-<wire x1="-36.83" y1="29.21" x2="-36.83" y2="26.67" width="0.1524" layer="21"/>
+<pad name="43" x="17.69" y="17.107" drill="1.016"/>
+<pad name="41" x="20.23" y="17.107" drill="1.016"/>
+<pad name="44" x="17.69" y="19.647" drill="1.016"/>
+<pad name="42" x="20.23" y="19.647" drill="1.016"/>
 </package>
 </packages>
 </library>
@@ -463,10 +485,10 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0.5" drill="0">
-<clearance class="0" value="0.381"/>
+<clearance class="0" value="0.254"/>
 </class>
-<class number="1" name="5V/3,3V/GND" width="1" drill="0">
-<clearance class="1" value="0.762"/>
+<class number="1" name="5V/3,3V/GND" width="1.5" drill="0">
+<clearance class="1" value="0.508"/>
 </class>
 </classes>
 <designrules name="default">
@@ -653,122 +675,132 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="3.3V" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="48.48" y="19.81" smashed="yes" rot="R180">
-<attribute name="NAME" x="51.0962" y="17.9812" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="POPULARITY" value="98" x="18" y="143" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="51.02" y="22.985" size="1.27" layer="27" rot="R180"/>
+<element name="3.3V" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="70.48" y="24.81" smashed="yes" rot="R180">
+<attribute name="NAME" x="73.0962" y="22.9812" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="POPULARITY" value="98" x="40" y="148" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="73.02" y="27.985" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="BNO055" library="BNO055_IMU" package="MODULE_2472" override_package3d_urn="urn:adsk.eagle:package:44615588/2" override_package_urn="urn:adsk.eagle:footprint:44615593/1" value="2472" x="13.61" y="32.47" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="86" y="-45" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/2472/Adafruit+Industries/view-part/?ref=eda" x="86" y="-45" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" Adafruit 9-DOF Absolute Orientation IMU Fusion Breakout - BNO055 | Adafruit Industries 2472 " x="86" y="-45" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Adafruit" x="86" y="-45" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="2472" x="86" y="-45" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="1.025" y="43.88" size="1.27" layer="25"/>
-<attribute name="PACKAGE" value="Non-Standard Adafruit" x="86" y="-45" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="86" y="-45" size="1.778" layer="27" display="off"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=6348449&amp;manufacturer=Adafruit&amp;part_name=2472&amp;search_term=bno055" x="86" y="-45" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/2472/Adafruit+Industries/view-part/?ref=snap" x="86" y="-45" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="0.025" y="21.06" size="1.27" layer="27" align="top-left"/>
+<element name="BNO055" library="BNO055_IMU" package="MODULE_2472" override_package3d_urn="urn:adsk.eagle:package:44615588/2" override_package_urn="urn:adsk.eagle:footprint:44615593/1" value="2472" x="17.61" y="34.47" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="90" y="-43" size="1.778" layer="27" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/2472/Adafruit+Industries/view-part/?ref=eda" x="90" y="-43" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Adafruit 9-DOF Absolute Orientation IMU Fusion Breakout - BNO055 | Adafruit Industries 2472 " x="90" y="-43" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Adafruit" x="90" y="-43" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="2472" x="90" y="-43" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="4.025" y="45.88" size="1.27" layer="25"/>
+<attribute name="PACKAGE" value="Non-Standard Adafruit" x="90" y="-43" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="90" y="-43" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=6348449&amp;manufacturer=Adafruit&amp;part_name=2472&amp;search_term=bno055" x="90" y="-43" size="1.778" layer="27" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/2472/Adafruit+Industries/view-part/?ref=snap" x="90" y="-43" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="4.025" y="23.06" size="1.27" layer="27" align="top-left"/>
 </element>
-<element name="COOLING_FAN" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="34.52" y="20.24" smashed="yes" rot="R180">
-<attribute name="NAME" x="37.1362" y="18.4112" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="POPULARITY" value="98" x="-62" y="132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="37.06" y="23.415" size="1.27" layer="27" rot="R180"/>
+<element name="COOLING_FAN" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="55.52" y="25.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="58.1362" y="23.4112" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="POPULARITY" value="98" x="-41" y="137" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="58.06" y="28.415" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="L298N1" library="L298N_Motor_Driver" library_urn="urn:adsk.eagle:library:44614934" package="L298N_DRIVER" package3d_urn="urn:adsk.eagle:package:44614937/1" override_package3d_urn="urn:adsk.eagle:package:44614937/3" override_package_urn="urn:adsk.eagle:footprint:44614935/1" value="L298N_DRIVER" x="16.04" y="92.15" smashed="yes" rot="R270"/>
-<element name="MOTOR_1" library="con-phoenix-508" library_urn="urn:adsk.eagle:library:176" package="MKDSN1,5/3-5,08" package3d_urn="urn:adsk.eagle:package:9641/1" override_package3d_urn="urn:adsk.eagle:package:44615543/2" override_package_urn="urn:adsk.eagle:footprint:9549/1" value="MKDSN1,5/3-5,08" x="4.58" y="70.06" smashed="yes" rot="R270">
-<attribute name="NAME" x="9.025" y="79.8911" size="1.27" layer="25" rot="R270"/>
-<attribute name="POPULARITY" value="0" x="-64" y="-29" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-1.975" y="80.87" size="1.27" layer="27" rot="R270"/>
+<element name="L298N1" library="L298N_Motor_Driver" library_urn="urn:adsk.eagle:library:44614934" package="L298N_DRIVER" package3d_urn="urn:adsk.eagle:package:44614937/1" override_package3d_urn="urn:adsk.eagle:package:44614937/3" override_package_urn="urn:adsk.eagle:footprint:44614935/1" value="L298N_DRIVER" x="46.96" y="51.85" smashed="yes" rot="R90"/>
+<element name="MOTOR_1" library="con-phoenix-508" library_urn="urn:adsk.eagle:library:176" package="MKDSN1,5/3-5,08" package3d_urn="urn:adsk.eagle:package:9641/1" override_package3d_urn="urn:adsk.eagle:package:44615543/2" override_package_urn="urn:adsk.eagle:footprint:9549/1" value="MKDSN1,5/3-5,08" x="67.42" y="72.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="62.975" y="63.1089" size="1.27" layer="25" rot="R90"/>
+<attribute name="POPULARITY" value="0" x="136" y="172" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="73.975" y="62.13" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="MOTOR_2" library="con-phoenix-508" library_urn="urn:adsk.eagle:library:176" package="MKDSN1,5/3-5,08" package3d_urn="urn:adsk.eagle:package:9641/1" override_package3d_urn="urn:adsk.eagle:package:44615432/2" override_package_urn="urn:adsk.eagle:footprint:9549/1" value="MKDSN1,5/3-5,08" x="4.3" y="52.13" smashed="yes" rot="R270">
-<attribute name="NAME" x="8.745" y="61.9611" size="1.27" layer="25" rot="R270"/>
-<attribute name="POPULARITY" value="0" x="-110" y="28" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-2.255" y="60.94" size="1.27" layer="27" rot="R270"/>
+<element name="MOTOR_2" library="con-phoenix-508" library_urn="urn:adsk.eagle:library:176" package="MKDSN1,5/3-5,08" package3d_urn="urn:adsk.eagle:package:9641/1" override_package3d_urn="urn:adsk.eagle:package:44615432/2" override_package_urn="urn:adsk.eagle:footprint:9549/1" value="MKDSN1,5/3-5,08" x="67.7" y="91.87" smashed="yes" rot="R90">
+<attribute name="NAME" x="63.255" y="82.0389" size="1.27" layer="25" rot="R90"/>
+<attribute name="POPULARITY" value="0" x="182" y="116" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="74.255" y="83.06" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="RASPBERRY_PI" library="RASPBERRY_PI_4B_4GB" package="MODULE_RASPBERRY_PI_4B_4GB" override_package3d_urn="urn:adsk.eagle:package:44615630/2" override_package_urn="urn:adsk.eagle:footprint:44615631/1" override_locally_modified="yes" value="RASPBERRY_PI_4B_4GB" x="37.58" y="-13.98" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="96" y="-47" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/RASPBERRY%20PI%204B/4GB/Raspberry+Pi/view-part/?ref=eda" x="96" y="-47" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" BCM2711 Raspberry Pi 4 Model B 4GB - ARM® Cortex®-A72 MPU Embedded Evaluation Board " x="96" y="-47" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Raspberry Pi" x="96" y="-47" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="RASPBERRY PI 4B/4GB" x="96" y="-47" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="1.83" y="16.02" size="1.27" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="None" x="96" y="-47" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="96" y="-47" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/RASPBERRY%20PI%204B/4GB/Raspberry+Pi/view-part/?ref=snap" x="96" y="-47" size="1.778" layer="27" display="off"/>
+<element name="RASPBERRY_PI" library="RASPBERRY_PI_4B_4GB" package="MODULE_RASPBERRY_PI_4B_4GB" override_package3d_urn="urn:adsk.eagle:package:44615630/2" override_package_urn="urn:adsk.eagle:footprint:44615631/1" value="RASPBERRY_PI_4B_4GB" x="45.58" y="-13.98" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="104" y="-47" size="1.778" layer="27" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/RASPBERRY%20PI%204B/4GB/Raspberry+Pi/view-part/?ref=eda" x="104" y="-47" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" BCM2711 Raspberry Pi 4 Model B 4GB - ARM® Cortex®-A72 MPU Embedded Evaluation Board " x="104" y="-47" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Raspberry Pi" x="104" y="-47" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="RASPBERRY PI 4B/4GB" x="104" y="-47" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="2.83" y="15.02" size="1.27" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="None" x="104" y="-47" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="104" y="-47" size="1.778" layer="27" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/RASPBERRY%20PI%204B/4GB/Raspberry+Pi/view-part/?ref=snap" x="104" y="-47" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="2.83" y="-45.75" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="SERVO_1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="32.76" y="28.77" smashed="yes" rot="R270">
-<attribute name="NAME" x="34.5888" y="32.6562" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="POPULARITY" value="92" x="-79" y="-36" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="29.585" y="32.58" size="1.27" layer="27" rot="R270"/>
+<element name="SERVO_1(GPIO5)" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="55.24" y="39.23" smashed="yes" rot="R90">
+<attribute name="NAME" x="53.4112" y="35.3438" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="POPULARITY" value="92" x="167" y="104" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="58.415" y="35.42" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="SERVO_2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="39.76" y="28.28" smashed="yes" rot="R270">
-<attribute name="NAME" x="41.5888" y="32.1662" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="POPULARITY" value="92" x="-72" y="-53" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="36.585" y="32.09" size="1.27" layer="27" rot="R270"/>
+<element name="SERVO_2(GPIO6)" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="64.24" y="39.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="62.4112" y="35.8338" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="POPULARITY" value="92" x="176" y="121" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="67.415" y="35.91" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="SERVO_3" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="46.76" y="28.26" smashed="yes" rot="R270">
-<attribute name="NAME" x="48.5888" y="32.1462" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="POPULARITY" value="92" x="-65" y="-20" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="43.585" y="32.07" size="1.27" layer="27" rot="R270"/>
+<element name="SERVO_3(GPIO13)" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="71.24" y="39.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="69.4112" y="35.8538" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="POPULARITY" value="92" x="183" y="88" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="74.415" y="35.93" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="ULTRA_SONIC" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="" x="37.098" y="40.778" smashed="yes" rot="R180">
-<attribute name="NAME" x="42.2542" y="43.9492" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="POPULARITY" value="91" x="15.508" y="163.968" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="42.178" y="43.953" size="1.27" layer="27" rot="R180"/>
+<element name="ULTRA_SONIC" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="" x="43.81" y="34.41" smashed="yes" rot="R90">
+<attribute name="NAME" x="41.9812" y="29.2538" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="POPULARITY" value="91" x="167" y="56" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="46.985" y="29.33" size="1.27" layer="27" rot="R90"/>
 </element>
 </elements>
 <signals>
-<signal name="3VO">
+<signal name="SHIELD">
+<contactref element="RASPBERRY_PI" pad="S1"/>
+<contactref element="RASPBERRY_PI" pad="S2"/>
+<contactref element="RASPBERRY_PI" pad="S3"/>
+<contactref element="RASPBERRY_PI" pad="S4"/>
+<wire x1="64.58" y1="-38.48" x2="64.58" y2="10.52" width="0" layer="19" extent="1-1"/>
+<wire x1="6.58" y1="-38.48" x2="64.58" y2="-38.48" width="0" layer="19" extent="1-1"/>
+<wire x1="6.58" y1="10.52" x2="6.58" y2="-38.48" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="3VO" class="1">
 <contactref element="BNO055" pad="2"/>
 </signal>
 <signal name="ENA">
 <contactref element="RASPBERRY_PI" pad="12"/>
 <contactref element="MOTOR_1" pad="1"/>
-<wire x1="16.15" y1="11.79" x2="4.605" y2="77.7011" width="0" layer="19" extent="1-1"/>
+<wire x1="24.15" y1="11.79" x2="67.395" y2="65.2989" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IN1">
 <contactref element="RASPBERRY_PI" pad="18"/>
 <contactref element="MOTOR_1" pad="2"/>
-<wire x1="23.77" y1="11.79" x2="4.605" y2="72.6211" width="0" layer="19" extent="1-1"/>
+<wire x1="31.77" y1="11.79" x2="67.395" y2="70.3789" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IN2">
 <contactref element="RASPBERRY_PI" pad="16"/>
 <contactref element="MOTOR_1" pad="3"/>
-<wire x1="21.23" y1="11.79" x2="4.605" y2="67.5411" width="0" layer="19" extent="1-1"/>
+<wire x1="29.23" y1="11.79" x2="67.395" y2="75.4589" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IN3">
 <contactref element="RASPBERRY_PI" pad="13"/>
 <contactref element="MOTOR_2" pad="1"/>
-<wire x1="18.69" y1="9.25" x2="4.325" y2="59.7711" width="0" layer="19" extent="1-1"/>
+<wire x1="26.69" y1="9.25" x2="67.675" y2="84.2289" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IN4">
 <contactref element="RASPBERRY_PI" pad="15"/>
 <contactref element="MOTOR_2" pad="2"/>
-<wire x1="21.23" y1="9.25" x2="4.325" y2="54.6911" width="0" layer="19" extent="1-1"/>
+<wire x1="29.23" y1="9.25" x2="67.675" y2="89.3089" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENB">
 <contactref element="RASPBERRY_PI" pad="22"/>
 <contactref element="MOTOR_2" pad="3"/>
-<wire x1="28.85" y1="11.79" x2="4.325" y2="49.6111" width="0" layer="19" extent="1-1"/>
+<wire x1="36.85" y1="11.79" x2="67.675" y2="94.3889" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V" class="1">
 <contactref element="BNO055" pad="1"/>
 <contactref element="RASPBERRY_PI" pad="2"/>
 <contactref element="RASPBERRY_PI" pad="4"/>
+<contactref element="SERVO_1(GPIO5)" pad="1"/>
+<contactref element="SERVO_2(GPIO6)" pad="1"/>
+<contactref element="SERVO_3(GPIO13)" pad="1"/>
 <contactref element="ULTRA_SONIC" pad="1"/>
 <contactref element="COOLING_FAN" pad="1"/>
-<contactref element="SERVO_1" pad="1"/>
-<contactref element="SERVO_2" pad="1"/>
-<contactref element="SERVO_3" pad="1"/>
-<wire x1="39.76" y1="30.82" x2="40.908" y2="40.778" width="0" layer="19" extent="1-1"/>
-<wire x1="32.76" y1="31.31" x2="39.76" y2="30.82" width="0" layer="19" extent="1-1"/>
-<wire x1="46.76" y1="30.8" x2="39.76" y2="30.82" width="0" layer="19" extent="1-1"/>
-<wire x1="35.79" y1="20.24" x2="32.76" y2="31.31" width="0" layer="19" extent="1-1"/>
-<wire x1="7.26" y1="23.58" x2="32.76" y2="31.31" width="0" layer="19" extent="1-1"/>
-<wire x1="5.99" y1="11.79" x2="7.26" y2="23.58" width="0" layer="19" extent="1-1"/>
-<wire x1="3.45" y1="11.79" x2="5.99" y2="11.79" width="0" layer="19" extent="1-1"/>
+<wire x1="64.24" y1="37.18" x2="71.24" y2="37.2" width="0" layer="19" extent="1-1"/>
+<wire x1="55.24" y1="36.69" x2="64.24" y2="37.18" width="0" layer="19" extent="1-1"/>
+<wire x1="56.79" y1="25.24" x2="55.24" y2="36.69" width="0" layer="19" extent="1-1"/>
+<wire x1="43.81" y1="30.6" x2="56.79" y2="25.24" width="0" layer="19" extent="1-1"/>
+<wire x1="11.26" y1="25.58" x2="43.81" y2="30.6" width="0" layer="19" extent="1-1"/>
+<wire x1="11.45" y1="11.79" x2="11.26" y2="25.58" width="0" layer="19" extent="1-1"/>
+<wire x1="13.99" y1="11.79" x2="11.45" y2="11.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND" class="1">
 <contactref element="BNO055" pad="3"/>
@@ -780,68 +812,68 @@ design rules under a new name.</description>
 <contactref element="RASPBERRY_PI" pad="30"/>
 <contactref element="RASPBERRY_PI" pad="34"/>
 <contactref element="RASPBERRY_PI" pad="39"/>
-<contactref element="SERVO_3" pad="2"/>
-<contactref element="SERVO_2" pad="2"/>
-<contactref element="SERVO_1" pad="2"/>
+<contactref element="SERVO_3(GPIO13)" pad="2"/>
+<contactref element="SERVO_2(GPIO6)" pad="2"/>
+<contactref element="SERVO_1(GPIO5)" pad="2"/>
 <contactref element="ULTRA_SONIC" pad="2"/>
 <contactref element="COOLING_FAN" pad="2"/>
 <contactref element="3.3V" pad="2"/>
-<wire x1="32.76" y1="28.77" x2="38.368" y2="40.778" width="0" layer="19" extent="1-1"/>
-<wire x1="39.76" y1="28.28" x2="32.76" y2="28.77" width="0" layer="19" extent="1-1"/>
-<wire x1="46.76" y1="28.26" x2="39.76" y2="28.28" width="0" layer="19" extent="1-1"/>
-<wire x1="47.21" y1="19.81" x2="46.76" y2="28.26" width="0" layer="19" extent="1-1"/>
-<wire x1="44.09" y1="11.79" x2="47.21" y2="19.81" width="0" layer="19" extent="1-1"/>
-<wire x1="39.01" y1="11.79" x2="44.09" y2="11.79" width="0" layer="19" extent="1-1"/>
-<wire x1="33.93" y1="9.25" x2="39.01" y2="11.79" width="0" layer="19" extent="1-1"/>
-<wire x1="51.71" y1="9.25" x2="44.09" y2="11.79" width="0" layer="19" extent="1-1"/>
-<wire x1="26.31" y1="11.79" x2="33.93" y2="9.25" width="0" layer="19" extent="1-1"/>
-<wire x1="18.69" y1="11.79" x2="26.31" y2="11.79" width="0" layer="19" extent="1-1"/>
-<wire x1="13.61" y1="9.25" x2="18.69" y2="11.79" width="0" layer="19" extent="1-1"/>
-<wire x1="8.53" y1="11.79" x2="13.61" y2="9.25" width="0" layer="19" extent="1-1"/>
-<wire x1="33.25" y1="20.24" x2="39.01" y2="11.79" width="0" layer="19" extent="1-1"/>
-<wire x1="12.34" y1="23.58" x2="8.53" y2="11.79" width="0" layer="19" extent="1-1"/>
+<wire x1="64.24" y1="39.72" x2="71.24" y2="39.74" width="0" layer="19" extent="1-1"/>
+<wire x1="55.24" y1="39.23" x2="64.24" y2="39.72" width="0" layer="19" extent="1-1"/>
+<wire x1="43.81" y1="33.14" x2="55.24" y2="39.23" width="0" layer="19" extent="1-1"/>
+<wire x1="69.21" y1="24.81" x2="64.24" y2="39.72" width="0" layer="19" extent="1-1"/>
+<wire x1="54.25" y1="25.24" x2="69.21" y2="24.81" width="0" layer="19" extent="1-1"/>
+<wire x1="47.01" y1="11.79" x2="54.25" y2="25.24" width="0" layer="19" extent="1-1"/>
+<wire x1="52.09" y1="11.79" x2="47.01" y2="11.79" width="0" layer="19" extent="1-1"/>
+<wire x1="41.93" y1="9.25" x2="47.01" y2="11.79" width="0" layer="19" extent="1-1"/>
+<wire x1="59.71" y1="9.25" x2="52.09" y2="11.79" width="0" layer="19" extent="1-1"/>
+<wire x1="34.31" y1="11.79" x2="41.93" y2="9.25" width="0" layer="19" extent="1-1"/>
+<wire x1="26.69" y1="11.79" x2="34.31" y2="11.79" width="0" layer="19" extent="1-1"/>
+<wire x1="21.61" y1="9.25" x2="26.69" y2="11.79" width="0" layer="19" extent="1-1"/>
+<wire x1="16.53" y1="11.79" x2="21.61" y2="9.25" width="0" layer="19" extent="1-1"/>
+<wire x1="16.34" y1="25.58" x2="16.53" y2="11.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BNO055_SDA">
 <contactref element="BNO055" pad="4"/>
 <contactref element="RASPBERRY_PI" pad="3"/>
-<wire x1="5.99" y1="9.25" x2="14.88" y2="23.58" width="0" layer="19" extent="1-1"/>
+<wire x1="13.99" y1="9.25" x2="18.88" y2="25.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BNO055_SCL">
 <contactref element="RASPBERRY_PI" pad="5"/>
 <contactref element="BNO055" pad="5"/>
-<wire x1="8.53" y1="9.25" x2="17.42" y2="23.58" width="0" layer="19" extent="1-1"/>
+<wire x1="16.53" y1="9.25" x2="21.42" y2="25.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ULTRA_SONIC_2">
 <contactref element="RASPBERRY_PI" pad="11"/>
 <contactref element="ULTRA_SONIC" pad="3"/>
-<wire x1="16.15" y1="9.25" x2="35.828" y2="40.778" width="0" layer="19" extent="1-1"/>
+<wire x1="24.15" y1="9.25" x2="43.81" y2="35.68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ULTRA_SONIC_1">
 <contactref element="RASPBERRY_PI" pad="7"/>
 <contactref element="ULTRA_SONIC" pad="4"/>
-<wire x1="11.07" y1="9.25" x2="33.288" y2="40.778" width="0" layer="19" extent="1-1"/>
+<wire x1="19.07" y1="9.25" x2="43.81" y2="38.22" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM_SERVO_1">
 <contactref element="RASPBERRY_PI" pad="29"/>
-<contactref element="SERVO_1" pad="3"/>
-<wire x1="39.01" y1="9.25" x2="32.76" y2="26.23" width="0" layer="19" extent="1-1"/>
+<contactref element="SERVO_1(GPIO5)" pad="3"/>
+<wire x1="47.01" y1="9.25" x2="55.24" y2="41.77" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM_SERVO_2">
 <contactref element="RASPBERRY_PI" pad="31"/>
-<contactref element="SERVO_2" pad="3"/>
-<wire x1="41.55" y1="9.25" x2="39.76" y2="25.74" width="0" layer="19" extent="1-1"/>
+<contactref element="SERVO_2(GPIO6)" pad="3"/>
+<wire x1="49.55" y1="9.25" x2="64.24" y2="42.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM_SERVO_3">
 <contactref element="RASPBERRY_PI" pad="33"/>
-<contactref element="SERVO_3" pad="3"/>
-<wire x1="44.09" y1="9.25" x2="46.76" y2="25.72" width="0" layer="19" extent="1-1"/>
+<contactref element="SERVO_3(GPIO13)" pad="3"/>
+<wire x1="52.09" y1="9.25" x2="71.24" y2="42.28" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="3.3V">
+<signal name="3.3V" class="1">
 <contactref element="RASPBERRY_PI" pad="1"/>
 <contactref element="RASPBERRY_PI" pad="17"/>
 <contactref element="3.3V" pad="1"/>
-<wire x1="23.77" y1="9.25" x2="49.75" y2="19.81" width="0" layer="19" extent="1-1"/>
-<wire x1="3.45" y1="9.25" x2="23.77" y2="9.25" width="0" layer="19" extent="1-1"/>
+<wire x1="31.77" y1="9.25" x2="71.75" y2="24.81" width="0" layer="19" extent="1-1"/>
+<wire x1="11.45" y1="9.25" x2="31.77" y2="9.25" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
