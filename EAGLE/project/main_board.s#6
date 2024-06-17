@@ -592,7 +592,11 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.762" drill="0">
+<clearance class="0" value="0.381"/>
+</class>
+<class number="1" name="New Class" width="2.032" drill="0">
+<clearance class="1" value="0.508"/>
 </class>
 </classes>
 <parts>
@@ -640,7 +644,7 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="N$5" class="0">
+<net name="ENA" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO18/GPIO_GEN1"/>
 <wire x1="-25.4" y1="10.16" x2="-43.18" y2="10.16" width="0.1524" layer="91"/>
@@ -650,7 +654,7 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <wire x1="-35.56" y1="48.26" x2="-35.56" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="IN1" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO24/GPIO_GEN5"/>
 <wire x1="-25.4" y1="2.54" x2="-48.26" y2="2.54" width="0.1524" layer="91"/>
@@ -660,7 +664,7 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <wire x1="-30.48" y1="45.72" x2="-30.48" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="IN2" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO23/GPIO_GEN4"/>
 <wire x1="-25.4" y1="5.08" x2="-50.8" y2="5.08" width="0.1524" layer="91"/>
@@ -670,7 +674,7 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <wire x1="-25.4" y1="43.18" x2="-25.4" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="IN3" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO27/GPIO_GEN2"/>
 <wire x1="-25.4" y1="12.7" x2="-55.88" y2="12.7" width="0.1524" layer="91"/>
@@ -679,7 +683,7 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <wire x1="-55.88" y1="-25.4" x2="-71.12" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="IN4" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO22/GPIO_GEN3"/>
 <wire x1="-25.4" y1="7.62" x2="-60.96" y2="7.62" width="0.1524" layer="91"/>
@@ -688,7 +692,7 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <wire x1="-60.96" y1="-20.32" x2="-71.12" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="ENB" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO25/GPIO_GEN6"/>
 <wire x1="-25.4" y1="0" x2="-66.04" y2="0" width="0.1524" layer="91"/>
@@ -697,7 +701,7 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <wire x1="-66.04" y1="-15.24" x2="-71.12" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="BNO055_5V" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="VIN"/>
 <wire x1="-55.88" y1="-66.04" x2="-66.04" y2="-66.04" width="0.1524" layer="91"/>
@@ -706,9 +710,10 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <pinref part="U1" gate="G$1" pin="5V"/>
 <wire x1="43.18" y1="-48.26" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="30.48" x2="25.4" y2="30.48" width="0.1524" layer="91"/>
+<label x="-66.04" y="-48.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="BNO055_GND" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <wire x1="-25.4" y1="-76.2" x2="50.8" y2="-76.2" width="0.1524" layer="91"/>
@@ -717,22 +722,24 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <wire x1="50.8" y1="-27.94" x2="25.4" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="BNO055_SDA" class="1">
 <segment>
 <pinref part="U2" gate="G$1" pin="SDA"/>
 <wire x1="-55.88" y1="-68.58" x2="-93.98" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="GPIO2/SDA1"/>
 <wire x1="-93.98" y1="-68.58" x2="-93.98" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="25.4" x2="-25.4" y2="25.4" width="0.1524" layer="91"/>
+<label x="-86.36" y="-66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="BNO055_SCL" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO3/SCL1"/>
 <wire x1="-25.4" y1="22.86" x2="-99.06" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="SCL"/>
 <wire x1="-99.06" y1="22.86" x2="-99.06" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="-71.12" x2="-55.88" y2="-71.12" width="0.1524" layer="91"/>
+<label x="-93.98" y="-76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

@@ -929,11 +929,11 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.45" drill="0">
+<class number="0" name="default" width="0.5" drill="0">
 <clearance class="0" value="0.254"/>
 </class>
-<class number="1" name="5V/3,3V/GND" width="0.5" drill="0">
-<clearance class="1" value="0.254"/>
+<class number="1" name="5V/3,3V/GND" width="1" drill="0">
+<clearance class="1" value="0.381"/>
 </class>
 </classes>
 <parts>
@@ -946,8 +946,9 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <part name="SERVO_1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="SERVO_2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="SERVO_3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
-<part name="COOLING_FAN" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="FAN" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="3.3V" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="GPS" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -999,13 +1000,17 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <attribute name="NAME" x="92.71" y="-34.925" size="1.778" layer="95"/>
 <attribute name="VALUE" x="92.71" y="-48.26" size="1.778" layer="96"/>
 </instance>
-<instance part="COOLING_FAN" gate="G$1" x="60.96" y="66.04" smashed="yes">
+<instance part="FAN" gate="G$1" x="60.96" y="66.04" smashed="yes">
 <attribute name="NAME" x="54.61" y="71.755" size="1.778" layer="95"/>
 <attribute name="VALUE" x="54.61" y="60.96" size="1.778" layer="96"/>
 </instance>
 <instance part="3.3V" gate="G$1" x="88.9" y="66.04" smashed="yes">
 <attribute name="NAME" x="82.55" y="71.755" size="1.778" layer="95"/>
 <attribute name="VALUE" x="82.55" y="60.96" size="1.778" layer="96"/>
+</instance>
+<instance part="GPS" gate="A" x="99.06" y="-71.12" smashed="yes">
+<attribute name="NAME" x="92.71" y="-62.865" size="1.778" layer="95"/>
+<attribute name="VALUE" x="92.71" y="-78.74" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -1085,7 +1090,7 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <wire x1="96.52" y1="20.32" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="30.48" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="30.48" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="COOLING_FAN" gate="G$1" pin="1"/>
+<pinref part="FAN" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="68.58" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="30.48" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="30.48" x2="81.28" y2="-2.54" width="0.1524" layer="91"/>
@@ -1099,6 +1104,10 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <wire x1="86.36" y1="30.48" x2="86.36" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="SERVO_3" gate="A" pin="1"/>
 <wire x1="86.36" y1="-38.1" x2="96.52" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="30.48" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="30.48" x2="30.48" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="GPS" gate="A" pin="4"/>
+<wire x1="30.48" y1="-73.66" x2="96.52" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="1">
@@ -1128,7 +1137,7 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <wire x1="25.4" y1="-27.94" x2="38.1" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="-27.94" x2="38.1" y2="53.34" width="0.1524" layer="91"/>
 <junction x="25.4" y="-27.94"/>
-<pinref part="COOLING_FAN" gate="G$1" pin="2"/>
+<pinref part="FAN" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="53.34" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="53.34" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
@@ -1136,6 +1145,9 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <junction x="38.1" y="53.34"/>
 <pinref part="3.3V" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="66.04" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="GPS" gate="A" pin="1"/>
+<wire x1="25.4" y1="-27.94" x2="25.4" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-66.04" x2="96.52" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BNO055_SDA" class="0">
@@ -1207,13 +1219,31 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <wire x1="53.34" y1="-43.18" x2="96.52" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="3.3V" class="0">
+<net name="3.3V" class="1">
 <segment>
 <pinref part="RASPBERRY_PI" gate="G$1" pin="3V3"/>
 <wire x1="25.4" y1="27.94" x2="96.52" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="27.94" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="3.3V" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TX" class="0">
+<segment>
+<pinref part="RASPBERRY_PI" gate="G$1" pin="GPIO15/RXD0"/>
+<wire x1="25.4" y1="17.78" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="17.78" x2="33.02" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="GPS" gate="A" pin="2"/>
+<wire x1="33.02" y1="-68.58" x2="96.52" y2="-68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RX" class="0">
+<segment>
+<pinref part="RASPBERRY_PI" gate="G$1" pin="GPIO14/TXD0"/>
+<wire x1="25.4" y1="20.32" x2="35.56" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="20.32" x2="35.56" y2="-71.12" width="0.1524" layer="91"/>
+<pinref part="GPS" gate="A" pin="3"/>
+<wire x1="35.56" y1="-71.12" x2="96.52" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -76,38 +76,8 @@
 <library name="RASPBERRY_PI_4B_4GB">
 <packages>
 <package name="MODULE_RASPBERRY_PI_4B_4GB">
-<wire x1="-42.5" y1="25" x2="-42.5" y2="-25" width="0.127" layer="21"/>
-<wire x1="-42.5" y1="-25" x2="-39.5" y2="-28" width="0.127" layer="21" curve="90"/>
-<wire x1="-39.5" y1="-28" x2="39.5" y2="-28" width="0.127" layer="21"/>
-<wire x1="39.5" y1="-28" x2="42.5" y2="-25" width="0.127" layer="21" curve="90"/>
-<wire x1="42.5" y1="-25" x2="42.5" y2="25" width="0.127" layer="21"/>
-<wire x1="42.5" y1="25" x2="39.5" y2="28" width="0.127" layer="21" curve="90"/>
-<wire x1="39.5" y1="28" x2="-39.5" y2="28" width="0.127" layer="21"/>
-<wire x1="-39.5" y1="28" x2="-42.5" y2="25" width="0.127" layer="21" curve="90"/>
 <text x="-42.75" y="-31.77" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<wire x1="23.5" y1="-25.5" x2="45" y2="-25.5" width="0.127" layer="51" style="shortdash"/>
-<wire x1="45" y1="-25.5" x2="45" y2="25.5" width="0.127" layer="51" style="shortdash"/>
-<wire x1="45" y1="25.5" x2="23.5" y2="25.5" width="0.127" layer="51" style="shortdash"/>
-<wire x1="23.5" y1="25.5" x2="23.5" y2="-25.5" width="0.127" layer="51" style="shortdash"/>
 <text x="-42.75" y="29" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<wire x1="-42.75" y1="-30.255" x2="-42.75" y2="28.25" width="0.05" layer="39"/>
-<wire x1="-42.75" y1="28.25" x2="45.25" y2="28.25" width="0.05" layer="39"/>
-<wire x1="45.25" y1="28.25" x2="45.25" y2="-30.255" width="0.05" layer="39"/>
-<wire x1="45.25" y1="-30.255" x2="-42.75" y2="-30.255" width="0.05" layer="39"/>
-<circle x="-43.4" y="23" radius="0.2" width="0.4" layer="21"/>
-<circle x="-43.4" y="23" radius="0.2" width="0.4" layer="51"/>
-<wire x1="-42.5" y1="25" x2="-42.5" y2="-25" width="0.127" layer="51"/>
-<wire x1="-42.5" y1="-25" x2="-39.5" y2="-28" width="0.127" layer="51" curve="90"/>
-<wire x1="-39.5" y1="-28" x2="39.5" y2="-28" width="0.127" layer="51"/>
-<wire x1="39.5" y1="-28" x2="42.5" y2="-25" width="0.127" layer="51" curve="90"/>
-<wire x1="42.5" y1="-25" x2="42.5" y2="25" width="0.127" layer="51"/>
-<wire x1="42.5" y1="25" x2="39.5" y2="28" width="0.127" layer="51" curve="90"/>
-<wire x1="39.5" y1="28" x2="-39.5" y2="28" width="0.127" layer="51"/>
-<wire x1="-39.5" y1="28" x2="-42.5" y2="25" width="0.127" layer="51" curve="90"/>
-<pad name="S4" x="-39" y="-24.5" drill="2.75" diameter="6.2"/>
-<pad name="S3" x="19" y="-24.5" drill="2.75" diameter="6.2"/>
-<pad name="S2" x="19" y="24.5" drill="2.75" diameter="6.2"/>
-<pad name="S1" x="-39" y="24.5" drill="2.75" diameter="6.2"/>
 <pad name="1" x="-34.13" y="23.23" drill="1.016" shape="square"/>
 <pad name="3" x="-31.59" y="23.23" drill="1.016"/>
 <pad name="5" x="-29.05" y="23.23" drill="1.016"/>
@@ -148,10 +118,12 @@
 <pad name="36" x="9.05" y="25.77" drill="1.016"/>
 <pad name="38" x="11.59" y="25.77" drill="1.016"/>
 <pad name="40" x="14.13" y="25.77" drill="1.016"/>
-<pad name="43" x="17.69" y="17.107" drill="1.016"/>
-<pad name="41" x="20.23" y="17.107" drill="1.016"/>
-<pad name="44" x="17.69" y="19.647" drill="1.016"/>
-<pad name="42" x="20.23" y="19.647" drill="1.016"/>
+<wire x1="-36.83" y1="26.67" x2="-36.83" y2="25.4" width="0.1524" layer="21"/>
+<wire x1="-36.83" y1="25.4" x2="-36.83" y2="20.32" width="0.1524" layer="21"/>
+<wire x1="-36.83" y1="20.32" x2="17.78" y2="20.32" width="0.1524" layer="21"/>
+<wire x1="17.78" y1="20.32" x2="17.78" y2="29.21" width="0.1524" layer="21"/>
+<wire x1="17.78" y1="29.21" x2="-36.83" y2="29.21" width="0.1524" layer="21"/>
+<wire x1="-36.83" y1="29.21" x2="-36.83" y2="26.67" width="0.1524" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -193,11 +165,6 @@
 <pin name="GPIO26" x="25.4" y="-7.62" length="middle" rot="R180"/>
 <pin name="GPIO20" x="25.4" y="-2.54" length="middle" rot="R180"/>
 <pin name="GPIO21" x="25.4" y="-5.08" length="middle" rot="R180"/>
-<pin name="SHIELD" x="25.4" y="-25.4" length="middle" direction="pwr" rot="R180"/>
-<pin name="TR02" x="25.4" y="-17.78" length="middle" rot="R180"/>
-<pin name="TR01" x="25.4" y="-15.24" length="middle" rot="R180"/>
-<pin name="TR00" x="25.4" y="-12.7" length="middle" rot="R180"/>
-<pin name="TR03" x="25.4" y="-20.32" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -240,11 +207,6 @@
 <connect gate="G$1" pin="GPIO9/SPI_MISO" pad="21"/>
 <connect gate="G$1" pin="ID_SC" pad="28"/>
 <connect gate="G$1" pin="ID_SD" pad="27"/>
-<connect gate="G$1" pin="SHIELD" pad="S1 S2 S3 S4"/>
-<connect gate="G$1" pin="TR00" pad="42"/>
-<connect gate="G$1" pin="TR01" pad="41"/>
-<connect gate="G$1" pin="TR02" pad="44"/>
-<connect gate="G$1" pin="TR03" pad="43"/>
 </connects>
 <technologies>
 <technology name="">
@@ -968,22 +930,22 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0.5" drill="0">
-<clearance class="0" value="0.254"/>
+<clearance class="0" value="0.381"/>
 </class>
-<class number="1" name="5V/3,3V/GND" width="1.5" drill="0">
-<clearance class="1" value="0.508"/>
+<class number="1" name="5V/3,3V/GND" width="1" drill="0">
+<clearance class="1" value="0.762"/>
 </class>
 </classes>
 <parts>
-<part name="RASPBERRY_PI" library="RASPBERRY_PI_4B_4GB" deviceset="RASPBERRY_PI_4B_4GB" device="" override_package3d_urn="urn:adsk.eagle:package:44615630/2" override_package_urn="urn:adsk.eagle:footprint:44615631/1"/>
+<part name="RASPBERRY_PI" library="RASPBERRY_PI_4B_4GB" deviceset="RASPBERRY_PI_4B_4GB" device="" override_package3d_urn="urn:adsk.eagle:package:44615630/2" override_package_urn="urn:adsk.eagle:footprint:44615631/1" override_locally_modified="yes"/>
 <part name="L298N1" library="L298N_Motor_Driver" library_urn="urn:adsk.eagle:library:44614934" deviceset="L298N_DRIVER" device="" package3d_urn="urn:adsk.eagle:package:44614937/1" override_package3d_urn="urn:adsk.eagle:package:44614937/3" override_package_urn="urn:adsk.eagle:footprint:44614935/1" override_locally_modified="yes"/>
 <part name="MOTOR_1" library="con-phoenix-508" library_urn="urn:adsk.eagle:library:176" deviceset="MKDSN1,5/3-5,08" device="" package3d_urn="urn:adsk.eagle:package:9641/1" override_package3d_urn="urn:adsk.eagle:package:44615543/2" override_package_urn="urn:adsk.eagle:footprint:9549/1"/>
 <part name="MOTOR_2" library="con-phoenix-508" library_urn="urn:adsk.eagle:library:176" deviceset="MKDSN1,5/3-5,08" device="" package3d_urn="urn:adsk.eagle:package:9641/1" override_package3d_urn="urn:adsk.eagle:package:44615432/2" override_package_urn="urn:adsk.eagle:footprint:9549/1"/>
 <part name="BNO055" library="BNO055_IMU" deviceset="2472" device="" override_package3d_urn="urn:adsk.eagle:package:44615588/2" override_package_urn="urn:adsk.eagle:footprint:44615593/1"/>
 <part name="ULTRA_SONIC" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
-<part name="SERVO_1(GPIO5)" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
-<part name="SERVO_2(GPIO6)" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
-<part name="SERVO_3(GPIO13)" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="SERVO_1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="SERVO_2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="SERVO_3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="COOLING_FAN" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="3.3V" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 </parts>
@@ -1025,15 +987,15 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <attribute name="NAME" x="92.71" y="23.495" size="1.778" layer="95"/>
 <attribute name="VALUE" x="92.71" y="7.62" size="1.778" layer="96"/>
 </instance>
-<instance part="SERVO_1(GPIO5)" gate="A" x="99.06" y="-5.08" smashed="yes">
+<instance part="SERVO_1" gate="A" x="99.06" y="-5.08" smashed="yes">
 <attribute name="NAME" x="92.71" y="0.635" size="1.778" layer="95"/>
 <attribute name="VALUE" x="92.71" y="-12.7" size="1.778" layer="96"/>
 </instance>
-<instance part="SERVO_2(GPIO6)" gate="A" x="99.06" y="-22.86" smashed="yes">
+<instance part="SERVO_2" gate="A" x="99.06" y="-22.86" smashed="yes">
 <attribute name="NAME" x="92.71" y="-17.145" size="1.778" layer="95"/>
 <attribute name="VALUE" x="92.71" y="-30.48" size="1.778" layer="96"/>
 </instance>
-<instance part="SERVO_3(GPIO13)" gate="A" x="99.06" y="-40.64" smashed="yes">
+<instance part="SERVO_3" gate="A" x="99.06" y="-40.64" smashed="yes">
 <attribute name="NAME" x="92.71" y="-34.925" size="1.778" layer="95"/>
 <attribute name="VALUE" x="92.71" y="-48.26" size="1.778" layer="96"/>
 </instance>
@@ -1119,24 +1081,24 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <wire x1="25.4" y1="30.48" x2="68.58" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="30.48" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
 <junction x="25.4" y="30.48"/>
-<pinref part="SERVO_1(GPIO5)" gate="A" pin="1"/>
-<wire x1="68.58" y1="20.32" x2="68.58" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-2.54" x2="96.52" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="SERVO_2(GPIO6)" gate="A" pin="1"/>
-<wire x1="68.58" y1="-2.54" x2="68.58" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-20.32" x2="96.52" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="68.58" y="-2.54"/>
-<pinref part="SERVO_3(GPIO13)" gate="A" pin="1"/>
-<wire x1="68.58" y1="-20.32" x2="68.58" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-38.1" x2="96.52" y2="-38.1" width="0.1524" layer="91"/>
-<junction x="68.58" y="-20.32"/>
 <pinref part="ULTRA_SONIC" gate="A" pin="1"/>
 <wire x1="96.52" y1="20.32" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
-<junction x="68.58" y="20.32"/>
 <wire x1="25.4" y1="30.48" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="30.48" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="COOLING_FAN" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="68.58" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="30.48" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="30.48" x2="81.28" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="SERVO_1" gate="A" pin="1"/>
+<wire x1="81.28" y1="-2.54" x2="96.52" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="30.48" x2="83.82" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="30.48" x2="83.82" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="SERVO_2" gate="A" pin="1"/>
+<wire x1="83.82" y1="-20.32" x2="96.52" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="30.48" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="30.48" x2="86.36" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="SERVO_3" gate="A" pin="1"/>
+<wire x1="86.36" y1="-38.1" x2="96.52" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="1">
@@ -1149,13 +1111,13 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <wire x1="50.8" y1="-27.94" x2="63.5" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="50.8" y="-27.94"/>
 <wire x1="63.5" y1="-27.94" x2="63.5" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="SERVO_3(GPIO13)" gate="A" pin="2"/>
+<pinref part="SERVO_3" gate="A" pin="2"/>
 <wire x1="63.5" y1="-40.64" x2="96.52" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-27.94" x2="63.5" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="63.5" y="-27.94"/>
-<pinref part="SERVO_2(GPIO6)" gate="A" pin="2"/>
+<pinref part="SERVO_2" gate="A" pin="2"/>
 <wire x1="63.5" y1="-22.86" x2="96.52" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="SERVO_1(GPIO5)" gate="A" pin="2"/>
+<pinref part="SERVO_1" gate="A" pin="2"/>
 <wire x1="63.5" y1="-22.86" x2="63.5" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-5.08" x2="96.52" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="63.5" y="-22.86"/>
@@ -1222,7 +1184,7 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <segment>
 <pinref part="RASPBERRY_PI" gate="G$1" pin="GPIO5"/>
 <wire x1="25.4" y1="12.7" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="SERVO_1(GPIO5)" gate="A" pin="3"/>
+<pinref part="SERVO_1" gate="A" pin="3"/>
 <wire x1="58.42" y1="12.7" x2="58.42" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="-7.62" x2="96.52" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
@@ -1231,7 +1193,7 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <segment>
 <pinref part="RASPBERRY_PI" gate="G$1" pin="GPIO6"/>
 <wire x1="25.4" y1="10.16" x2="55.88" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="SERVO_2(GPIO6)" gate="A" pin="3"/>
+<pinref part="SERVO_2" gate="A" pin="3"/>
 <wire x1="55.88" y1="10.16" x2="55.88" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="-25.4" x2="96.52" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
@@ -1240,12 +1202,12 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 <segment>
 <pinref part="RASPBERRY_PI" gate="G$1" pin="GPIO13"/>
 <wire x1="25.4" y1="5.08" x2="53.34" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="SERVO_3(GPIO13)" gate="A" pin="3"/>
+<pinref part="SERVO_3" gate="A" pin="3"/>
 <wire x1="53.34" y1="5.08" x2="53.34" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="-43.18" x2="96.52" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="3.3V" class="1">
+<net name="3.3V" class="0">
 <segment>
 <pinref part="RASPBERRY_PI" gate="G$1" pin="3V3"/>
 <wire x1="25.4" y1="27.94" x2="96.52" y2="27.94" width="0.1524" layer="91"/>
