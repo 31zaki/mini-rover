@@ -1,4 +1,3 @@
-# motor_control.py
 import RPi.GPIO as GPIO
 
 class MotorControl:
@@ -16,7 +15,7 @@ class MotorControl:
         GPIO.setup(self.motor2_in4, GPIO.OUT)
         GPIO.setup(self.motor2_enb, GPIO.OUT)
 
-        self.pwm1 = GPIO.PWM(self.motor1_ena, pwm_freq)
+        self.pwm1 = GPIO.PWM(self.motor1_ena, pwm_freq) #?
         self.pwm2 = GPIO.PWM(self.motor2_enb, pwm_freq)
         self.pwm1.start(0)
         self.pwm2.start(0)
@@ -32,31 +31,3 @@ class MotorControl:
         GPIO.output(self.motor2_in4, GPIO.LOW)
         self.pwm1.ChangeDutyCycle(speed)
         self.pwm2.ChangeDutyCycle(speed)
-
-    def move_backward(self, speed=75):
-        GPIO.output(self.motor1_in1, GPIO.LOW)
-        GPIO.output(self.motor1_in2, GPIO.HIGH)
-        GPIO.output(self.motor2_in3, GPIO.LOW)
-        GPIO.output(self.motor2_in4, GPIO.HIGH)
-        self.pwm1.ChangeDutyCycle(speed)
-        self.pwm2.ChangeDutyCycle(speed)
-
-    def turn_left(self, speed=50):
-        GPIO.output(self.motor1_in1, GPIO.LOW)
-        GPIO.output(self.motor1_in2, GPIO.HIGH)
-        GPIO.output(self.motor2_in3, GPIO.HIGH)
-        GPIO.output(self.motor2_in4, GPIO.LOW)
-        self.pwm1.ChangeDutyCycle(speed)
-        self.pwm2.ChangeDutyCycle(speed)
-
-    def turn_right(self, speed=50):
-        GPIO.output(self.motor1_in1, GPIO.HIGH)
-        GPIO.output(self.motor1_in2, GPIO.LOW)
-        GPIO.output(self.motor2_in3, GPIO.LOW)
-        GPIO.output(self.motor2_in4, GPIO.HIGH)
-        self.pwm1.ChangeDutyCycle(speed)
-        self.pwm2.ChangeDutyCycle(speed)
-
-    def cleanup(self):
-        self.stop_motors()
-        GPIO.cleanup()
