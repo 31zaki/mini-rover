@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -64,7 +64,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -73,24 +73,48 @@
 </layers>
 <library>
 <packages>
-<package name="NRF24L01">
-<wire x1="0" y1="-0.54" x2="30" y2="-0.54" width="0.1524" layer="21"/>
-<wire x1="30" y1="-0.54" x2="30" y2="13.46" width="0.1524" layer="21"/>
-<wire x1="30" y1="13.46" x2="0" y2="13.46" width="0.1524" layer="21"/>
-<wire x1="0" y1="13.46" x2="0" y2="-0.54" width="0.1524" layer="21"/>
-<pad name="MISO" x="2.54" y="2.54" drill="1"/>
-<pad name="SCK" x="2.54" y="5.08" drill="1"/>
-<pad name="CE" x="2.54" y="7.62" drill="1"/>
-<pad name="GND" x="2.54" y="10.16" drill="1"/>
-<pad name="VCC" x="5.08" y="10.16" drill="1"/>
-<pad name="CSN" x="5.08" y="7.62" drill="1"/>
-<pad name="MOSI" x="5.08" y="5.08" drill="1"/>
-<pad name="IRQ" x="5.08" y="2.54" drill="1"/>
+<package name="DHT20">
+<wire x1="-6.3" y1="2.9" x2="6.3" y2="2.9" width="0.1524" layer="21"/>
+<wire x1="6.3" y1="2.9" x2="6.3" y2="-2.9" width="0.1524" layer="21"/>
+<wire x1="6.3" y1="-2.9" x2="-6.3" y2="-2.9" width="0.1524" layer="21"/>
+<wire x1="-6.3" y1="-2.9" x2="-6.3" y2="2.9" width="0.1524" layer="21"/>
+<pad name="SDA" x="-1.27" y="0" drill="1.2" shape="square"/>
+<pad name="GND" x="1.27" y="0" drill="1.2" shape="square"/>
+<pad name="SCL" x="3.81" y="0" drill="1.2" shape="square"/>
+<pad name="5V" x="-3.81" y="0" drill="1.2" shape="square"/>
 </package>
 </packages>
 <symbols>
+<symbol name="DHT20">
+<wire x1="-6.3" y1="-2.9" x2="6.3" y2="-2.9" width="0.1524" layer="94"/>
+<wire x1="6.3" y1="-2.9" x2="6.3" y2="2.9" width="0.1524" layer="94"/>
+<wire x1="6.3" y1="2.9" x2="-6.3" y2="2.9" width="0.1524" layer="94"/>
+<wire x1="-6.3" y1="2.9" x2="-6.3" y2="-2.9" width="0.1524" layer="94"/>
+<pin name="SDA" x="-1.27" y="5.08" length="middle" rot="R270"/>
+<pin name="GND" x="1.27" y="5.08" length="middle" rot="R270"/>
+<pin name="SCL" x="3.81" y="5.08" length="middle" rot="R270"/>
+<pin name="5V" x="-3.81" y="5.08" length="middle" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="DHT20">
+<gates>
+<gate name="G$1" symbol="DHT20" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DHT20">
+<connects>
+<connect gate="G$1" pin="5V" pad="5V"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
